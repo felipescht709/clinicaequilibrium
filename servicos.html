@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Equilibrium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+        #banner-principal h1 {
+            color: white;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('logo/logo_02.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            z-index: -1; 
+            filter: brightness(50%); 
+            background-color: gray;
+        }
+
+        .navbar, footer {
+            background-color: #000000; 
+        }
+
+        .navbar-brand, .nav-link, h2, h4, p {
+            color: #ffffff !important; 
+        }
+
+        section {
+            background-color: transparent;
+        }
+
+        #agendar-consulta a {
+            background-color: #d4af37 !important;
+            color: #ffffff !important;
+        }
+
+        #servicos a {
+            color: #d4af37;
+        }
+
+        #depoimentos p {
+            color: #ffffff;
+        }
+
+        .service-video {
+            margin-top: 20px;
+        }
+        .service-image {
+            width: 100%;
+            max-width: 300px; 
+            height: auto; 
+            object-fit: cover; 
+            border-radius: 8px; 
+        }
+        .whatsapp-button {
+            display: inline-block; 
+            background-color: #25D366; 
+            color: white; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            text-decoration: none;
+            font-size: 16px; 
+            font-weight: bold; 
+            text-align: center; 
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebea5; 
+        }
+
+        .price-tag {
+            font-size: 18px; 
+            font-weight: bold; 
+            color: #d4af37; 
+            margin-top: 10px; 
+        }
+        .card {
+         background-color: rgba(0, 0, 0, 0.0); 
+         border: none; 
+        }
+
+        .card-body {
+         color: #ffffff; 
+        }
+
+        .card-img-top {
+         border-radius: 8px; 
+        }
+
+        .service-video iframe {
+         border-radius: 8px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="background-image"></div> 
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Logo/logo_01.png" alt="Clínica Equilibrium" style="height: 40px; margin-right: 10px;">
+                Clínica Equilibrium
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="https://wa.me/5549988495029" style="background-color: #d4af37 !important; border-color: #d4af37 !important;" target="_blank">
+                            Agende uma Consulta
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="service-video mt-3">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/npPA0XvDhoc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Fisioterapia Ortopédica</h4>
+                            <p class="card-text">Tratamentos focados em lesões musculoesqueléticas, ajudando na recuperação e prevenção de problemas relacionados aos ossos, músculos e articulações.</p>
+                            <div class="price-tag">R$ 150,00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="service-video mt-3">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/Vcbu2USUVbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Fisioterapia Esportiva</h4>
+                            <p class="card-text">Especializada em reabilitação e prevenção de lesões esportivas, ajudando atletas a voltar às suas atividades com segurança e eficiência.</p>
+                            <div class="price-tag">R$ 180,00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="service-video mt-3">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/DTq0NU4jH38" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Reabilitação Pós-Cirúrgica</h4>
+                            <p class="card-text">Recuperação especializada para pacientes que passaram por cirurgias, visando restaurar a funcionalidade e qualidade de vida o mais rápido possível.</p>
+                            <div class="price-tag">R$ 200,00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <img src="Serviços/download (3).jpeg" class="card-img-top" alt="Fisioterapia Neurológica">
+                        <div class="card-body">
+                            <h4 class="card-title">Fisioterapia Neurológica</h4>
+                            <p class="card-text">Tratamentos para condições neurológicas, como AVC e esclerose múltipla, focados em melhorar a mobilidade e independência dos pacientes.</p>
+                            <div class="price-tag">R$ 220,00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <img src="Serviços/download (4).jpeg" class="card-img-top" alt="Terapia Manual">
+                        <div class="card-body">
+                            <h4 class="card-title">Terapia Manual</h4>
+                            <p class="card-text">Técnicas de terapia manual para aliviar dores e restaurar a função normal do corpo através de mobilização e manipulação das articulações e tecidos moles.</p>
+                            <div class="price-tag">R$ 170,00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <img src="Serviços/download.jpeg" class="card-img-top" alt="Pilates Terapêutico">
+                        <div class="card-body">
+                            <h4 class="card-title">Pilates Terapêutico</h4>
+                            <p class="card-text">Exercícios de Pilates adaptados para reabilitação, ajudando a melhorar a postura, flexibilidade, e força do core.</p>
+                            <div class="price-tag">R$ 160,00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="tratamentos-personalizados" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Tratamentos Personalizados</h2>
+        <p class="text-center">Na Clínica Equilibrium, acreditamos que cada paciente é único. Por isso, nossos tratamentos são personalizados para atender às necessidades específicas de cada indivíduo, combinando técnicas tradicionais com abordagens inovadoras baseadas em evidências científicas.</p>
+    </div>
+</section>
+
+<section id="abordagem-inovadora" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Abordagem Inovadora</h2>
+        <p class="text-center">Utilizamos as práticas mais modernas e tecnologias avançadas para garantir que nossos pacientes recebam o melhor atendimento possível. Nosso compromisso com a inovação nos permite oferecer tratamentos eficazes e de alta qualidade.</p>
+    </div>
+    <div class="text-center">
+        <a href="https://wa.me/5549988495029" class="whatsapp-button">Solicite um Orçamento</a>
+    </div>
+</section>
+
+<footer class="text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Clínica Equilibrium. Todos os direitos reservados.</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://facebook.com/clinicaequilibrium" target="_blank" class="mx-2">
+            <i class="fab fa-facebook-f" style="font-size: 24px; color: #ffffff;"></i>
+        </a>
+        <a href="https://instagram.com/clinicaequilibrium" target="_blank" class="mx-2">
+            <i class="fab fa-instagram" style="font-size: 24px; color: #ffffff;"></i>
+        </a>
+        <a href="https://linkedin.com/company/clinicaequilibrium" target="_blank" class="mx-2">
+            <i class="fab fa-linkedin-in" style="font-size: 24px; color: #ffffff;"></i>
+        </a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

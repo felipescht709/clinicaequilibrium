@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Equilibrium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+        #banner-principal h1 {
+            color: white;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('logo/logo_02.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            z-index: -1; 
+            filter: brightness(50%); 
+            background-color: gray;
+        }
+
+        .navbar, footer {
+            background-color: #000000; 
+        }
+
+        .navbar-brand, .nav-link, h2, h4, p, li {
+            color: #ffffff !important; 
+        }
+
+        section {
+            background-color: transparent;
+        }
+
+        #agendar-consulta a {
+            background-color: #d4af37 !important;
+            color: #ffffff !important;
+        }
+
+        #servicos a {
+            color: #d4af37;
+        }
+
+        #depoimentos p {
+            color: #ffffff;
+        }
+
+        #contato .row {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+        }
+
+        #contato .map-container {
+        margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-image"></div> 
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Logo/logo_01.png" alt="Clínica Equilibrium" style="height: 40px; margin-right: 10px;">
+                Clínica Equilibrium
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="https://wa.me/5549988495029" style="background-color: #d4af37 !important; border-color: #d4af37 !important;" target="_blank">
+                            Agende uma Consulta
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section id="historia" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Nossa História</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p class="text-center">
+                    A Equilibrium foi criada para oferecer um espaço onde saúde e bem-estar são tratados de forma integrada e personalizada. A clínica valoriza o equilíbrio como pilar fundamental para uma vida saudável, adotando uma abordagem holística que promove recuperação física, fortalecimento mental e emocional.
+                </p>
+                <p class="text-center">
+                    Desde o início, a Equilibrium se comprometeu a proporcionar um ambiente acolhedor e de confiança, com foco total no paciente. A clínica é projetada para ser um espaço tranquilo e confortável, com uma equipe altamente qualificada e em constante formação.
+                </p>
+                <p class="text-center">
+                    Os profissionais da Equilibrium desenvolvem planos de tratamento personalizados, combinando técnicas tradicionais e inovadoras, sempre baseados em evidências científicas. A clínica se destaca pelo atendimento humanizado e pela busca incessante de resultados positivos, acompanhando de perto cada etapa do processo de recuperação.
+                </p>
+                <p class="text-center">
+                    O objetivo da Equilibrium é que cada paciente saia fortalecido e mais próximo de uma vida equilibrada, com qualidade e sem dores, oferecendo uma ampla gama de serviços especializados com dedicação e cuidado.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="equipe" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Nossa Equipe</h2>
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4">
+                <img src="Clientes/felipe.jpg" class="img-fluid rounded-circle" alt="Felipe Schmidt" style="width: 150px;">
+                <h4>Felipe Schmidt</h4>
+                <p>Responsável Técnico - CREFITO-12/345678-F</p>
+            </div>
+            <!-- Adicione outros membros da equipe aqui -->
+        </div>
+    </div>
+</section>
+
+<section id="valores" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Visão, Missão e Valores</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="text-center">Visão</h4>
+                <p>Ser referência em reabilitação e bem-estar, promovendo a harmonia entre corpo e mente através de um atendimento humanizado e personalizado.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-center">Missão</h4>
+                <p>Restaurar e promover a funcionalidade do corpo, proporcionando aos nossos pacientes uma vida ativa e saudável, através de tratamentos fisioterapêuticos personalizados e baseados em evidências científicas.</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-center" >Valores</h4>
+                <ul>
+                    <li>Compromisso com a Saúde</li>
+                    <li>Excelência Profissional</li>
+                    <li>Empatia e Humanização</li>
+                    <li>Transparência</li>
+                    <li>Inovação</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="infraestrutura" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Infraestrutura</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="Serviços/download (1).jpeg" class="img-fluid" alt="Infraestrutura da clínica">
+                <p class="mt-2">Infraestrutura da clínica</p>
+            </div>
+            <div class="col-md-4">
+                <img src="Serviços/images.jpeg" class="img-fluid" alt="Infraestrutura da clínica">
+                <p class="mt-2">Infraestrutura da clínica</p>
+            </div>
+            <div class="col-md-4">
+                <img src="Serviços/download (2).jpeg" class="img-fluid" alt="Equipamentos modernos">
+                <p class="mt-2">Equipamentos modernos</p>
+            </div>
+        </div>
+        <p class="text-center mt-4">Nossa clínica foi projetada para oferecer um ambiente tranquilo e confortável, com equipamentos de última geração para garantir que você receba o melhor tratamento possível.</p>
+    </div>
+</section>
+
+<section id="contato" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contato</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="text-center">Endereço</h4>
+                <p class="text-center">
+                    Av Nereu Ramos, 1912 - E<br>
+                    Centro<br>
+                    Chapecó - SC<br>
+                    CEP 89805-102
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-center">Localização</h4>
+                <div class="map-container text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1776.0901377549426!2d-52.616805600000006!3d-27.0876111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDA1JzE1LjQiUyA1MsKwMzcnMDAuNSJX!5e0!3m2!1spt-BR!2sbr!4v1725235497760!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Clínica Equilibrium. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
